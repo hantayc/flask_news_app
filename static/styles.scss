@@ -1,0 +1,116 @@
+// Custom Variables
+
+$primary-color: #4CAF50; // Green
+$secondary-color: #FFC107; // Amber
+$background-color: #F5F5F5; // Light Gray
+$text-color: #212121; // Dark Gray
+$font-family-main: 'Roboto', sans-serif;
+$font-family: 'Open Sans', sans-serif;
+$border-color: #BDBDBD; // Gray
+
+body {
+    background-color: $background-color !important;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: $primary-color !important;
+    padding: 25px 15px;
+    font-family: $font-family-main;
+
+    .navbar-brand {
+        color: white;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: darken(white, 10%);
+        }
+    }
+
+    .nav-link {
+        color: white;
+        font-size: 1.2rem;
+
+        &:hover {
+            color: darken(white, 10%);
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: $font-family-main;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+
+    input[type='text'] {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid $primary-color;
+        border-radius: 4px;
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    #search-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($primary-color, 10%);
+        }
+    }
+}
+
+.news-article {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    h5 {
+        margin: 0;
+        padding: 3px 0 10px 0; // Added lower padding
+        color: black;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+}
